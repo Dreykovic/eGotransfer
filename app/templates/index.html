@@ -1,0 +1,327 @@
+{% extends "base.html" %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block js %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/concept.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<!-- Presentation petite description su eGoTransfer affichage et presentation-->
+<section class="presentation-section">
+    <div id="intro" class="presentation-container">
+        <svg viewBox="0 0 1320 300" class="heading">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                eGoTransfer
+            </text>
+        </svg>
+
+        <p class="presentation text-justify">
+            Bienvenue sur Ego Transfer, une plateforme de transfert d'argent sécurisée et conviviale.
+            Transférez de l'argent d'un compte Flooz vers un compte Tmoney ou d'un compte Tmoney vers un compte Flooz.
+            <br><br>
+            <span class="sous-presentation">Rejoignez des millions d'utilisateurs satisfaits aujourd'hui !</span><br>
+            <span class="sous-presentation">eGoTransfer, le leader dans l'interconnexion des moyens de paiement électroniques</span>
+        </p>
+
+        <div class="buttons-download mt-3">
+            <a href="https://play.google.com/store/apps/details?id=com.egotransfer.togo.egotransfer" class="download-button btn btn-primary"><i class="fab fa-android"></i> Télécharger pour Android</a>
+            <a href="#" class="download-button btn btn-primary ml-2" style="display:none;" ><i class="fab fa-apple" ></i> Télécharger pour iPhone</a>
+        </div>
+    </div>
+    <div class="image-container">
+    <img src="{{ url_for('static', filename='images/phone.png') }}" alt="Animated image" class="smartphone">
+    </div>
+</section>
+
+<!-- Presentation des partenaires de eGoTransfer-->
+<section class="parter-container" style="margin:0; padding: 0;">
+<h2 class="partner-title">NOS PARTENAIRES</h2>
+<div class="partners-section">
+    <div class="logos-partners">
+        <img src="{{ url_for('static', filename='images/TI.png') }}" alt="Logo" class="reduit">
+        <img src="{{ url_for('static', filename='images/nlab.png') }}" alt="Logo" class="logo" >
+        <img src="{{ url_for('static', filename='images/incubme.png') }}" alt="Logo" class="reduit-in">
+        <img src="{{ url_for('static', filename='images/ecobank.png') }}" alt="Logo" class="eco-logo" >
+        <img src="{{ url_for('static', filename='images/visa.png') }}" alt="Logo"  class="logo" >
+        <img src="{{ url_for('static', filename='images/togom 002.png') }}" alt="Logo" class="logo" >
+        <img src="{{ url_for('static', filename='images/moov.png') }}" alt="Logo" class="logo">
+        <img src="{{ url_for('static', filename='images/xbet.png') }}" alt="Logo" class="logo">
+        <img src="{{ url_for('static', filename='images/vip.png') }}" alt="Logo" class="logo">
+
+        <img src="{{ url_for('static', filename='images/TI.png') }}" alt="Logo" class="reduit">
+        <img src="{{ url_for('static', filename='images/nlab.png') }}" alt="Logo" class="logo" >
+        <img src="{{ url_for('static', filename='images/incubme.png') }}" alt="Logo" class="reduit-in">
+        <img src="{{ url_for('static', filename='images/ecobank.png') }}" alt="Logo" class="eco-logo" >
+        <img src="{{ url_for('static', filename='images/visa.png') }}" alt="Logo"  class="logo" >
+        <img src="{{ url_for('static', filename='images/togom 002.png') }}" alt="Logo" class="logo" >
+        <img src="{{ url_for('static', filename='images/moov.png') }}" alt="Logo" class="logo">
+        <img src="{{ url_for('static', filename='images/xbet.png') }}" alt="Logo" class="logo">
+        <img src="{{ url_for('static', filename='images/vip.png') }}" alt="Logo" class="logo">
+    </div>
+</div>
+</section>
+
+<!-- Presentation du fontionnement des services avec l'utilisation d'un timeline -->
+<section class="fonction-section">
+    <h2 class="title">Comment ça marche ?</h2>
+
+    <div class="seofy_module_time_line_vertical appear_anim">
+        <div id="time_line_5cf90ca818f641" class="time_line-item  item_show">
+            <div class="time_line-date_wrap">
+                <div class="seofy_hexagon">
+                    <svg style=" fill: #ffa705;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
+                        </path>
+                    </svg>
+                </div>
+            <div class="seofy_hexagon">
+                <svg style="filter: drop-shadow(4px 5px 4px rgba(255,167,5,0.3)); fill: #ffa705;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                    <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
+                    </path>
+                </svg>
+            </div>
+            <h4 class="time_line-date">Etape 1</h4>
+        </div>
+        <div class="time_line-content">
+            <h5 class="time_line-title">Téléchargement de l'application</h5>
+            <div class="time_line-descr">
+               Cliquer sur le lien qui se trouve en haut de la page pour télécharger l'application. 
+            </div>
+        </div>
+    </div>
+    <div id="time_line_5cf90ca818fc83" class="time_line-item item_active item_show">
+        <div class="time_line-date_wrap">
+            <div class="seofy_hexagon">
+                <svg style=" fill: #69e9f2;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                    <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
+                    </path>
+                </svg>
+            </div>
+            <div class="seofy_hexagon">
+                <svg style="filter: drop-shadow(4px 5px 4px rgba(105,233,242,0.3)); fill: #69e9f2;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                    <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
+                    </path>
+                </svg>
+            </div>
+            <h4 class="time_line-date">Etape 2</h4>
+        </div>
+        <div class="time_line-content">
+            <h5 class="time_line-title">Installation et créaton de compte</h5>
+            <div class="time_line-descr">
+                Renseignez les informations demandées (Nom complet et numéro de téléphone et code pin) pour a création de votre compte.
+            </div>
+        </div>
+    </div>
+     <div id="time_line_5cf90ca818fa82" class="time_line-item  item_show">
+        <div class="time_line-date_wrap">
+            <div class="seofy_hexagon">
+                <svg style=" fill: #ff5600;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                    <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
+                    </path>
+                </svg>
+            </div>
+            <div class="seofy_hexagon">
+                <svg style="filter: drop-shadow(4px 5px 4px rgba(255,86,0,0.3)); fill: #ff5600;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                    <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
+                    </path>
+                </svg>
+            </div>
+            <h4 class="time_line-date">Etape 3</h4>
+        </div>
+        <div class="time_line-content">
+            <h5 class="time_line-title">Faites votre premier transfert</h5>
+            <div class="time_line-descr">
+                Sélectionner le type de transfert que vous voulez faire, le montant, le destinaire, votre code et le tour est joué!
+            </div>
+        </div>
+    </div>
+
+    <div class="fonction-img">
+        <img src="{{ url_for('static', filename='images/transfer.png') }}" alt="Animated image" class="transact">
+    </div>
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 80%; height: 70%; margin: auto;" src="https://www.youtube-nocookie.com/embed/CBHkOLLWYtY" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- Presentation quelques avis de nos utilisateurs -->
+<section class="testimonial">
+    <div class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2 class="testimonial-title">Les avis de nos utilisateurs</h2>
+
+                        <div class="section-borders">
+                            <span></span>
+                            <span class="black-border"></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="owl-carousel client-testimonial-carousel">
+                        
+                        <div class="single-testimonial-item">
+                            <p>J'étais perdu avec les paiements de mon abonnement canal box, car je n'avais pas d'argent sur mon Flooz, mais cette application a résolu tous mes problèmes. Un grand merci à vous.</p>
+                            <h3><span>User</span></h3>
+                        </div>
+                        <div class="single-testimonial-item">
+                            <p>Je suis impressionné par l'ingéniosité de votre solution. Les transactions sont effectuées en un rien de temps. Continuez comme ça!</p>
+                            <h3><span>User</span></h3>
+                        </div>
+                        <div class="single-testimonial-item">
+                            <p>Votre support client est excellent. Ils ont résolu mon problème en quelques minutes. Je suis vraiment satisfait.</p>
+                            <h3><span>User</span></h3>
+                        </div>
+                        
+                        <div class="single-testimonial-item">
+                            <p>L'application est vraiment intuitive et facile à utiliser. Même ma mère peut l'utiliser sans problème.</p>
+                            <h3><span>User</span></h3>
+                        </div>
+                        <div class="single-testimonial-item">
+                            <p>Cette application a rendu mes transactions mobiles de Flooz vers Tmoney si simples et sécurisées. Je ne peux plus m'en passer!</p>
+                            <h3><span>User</span></h3>
+                        </div>
+                        
+                        <div class="single-testimonial-item">
+                            <p>J'ai utilisé plusieurs applications de paiement, mais la vôtre est de loin la meilleure. Je l'adore!</p>
+                            <h3><span>User</span></h3>
+                        </div>
+                        <div class="single-testimonial-item">
+                            <p>Vos services sont une véritable révélation! Je vais les recommander à tous mes amis et ma famille.</p>
+                            <h3><span>User</span></h3>
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Foire aux  question et adresse pour contacter le service-->
+<section class="faq-contact">
+    <div class="faq-section">
+        <h2>FAQ</h2>
+        <div id="accordion">
+            <div class="faq-card">
+                <div class="card-header">
+                    <a class="question ">
+                        Les services de eGoTransfer, s'étendent-ils à l'international ?
+                    </a>
+                </div>
+                <div class="answer">
+                    <div class="reponse">
+                        Actuellement, nos services sont uniquement disponibles au niveau national. Cependant, nous travaillons à étendre notre couverture à l'international.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="card-header">
+                    <a class="question " >
+                         Comment effectuer une transaction sur eGoTransfer ?
+                    </a>
+                </div>
+                <div class="answer" >
+                    <div class="reponse">
+                        Vous pouvez suivre le guide détaillé sur notre chaîne YouTube en cliquant sur ce lien : <a href="https://youtu.be/CBHkOLLWYtY">https://youtu.be/CBHkOLLWYtY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="card-header">
+                    <a class="question " >
+                         Peut-on annuler une transaction ?
+                    </a>
+                </div>
+                <div class="answer" >
+                    <div class="reponse">
+                        Une fois la transaction effectuée, elle ne peut pas être annulée par l'utilisateur. Pour toute question concernant une transaction, veuillez contacter notre service client.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="card-header">
+                    <a class="question " >
+                        En cas de souci lié à une transaction, que dois-je faire ?
+                    </a>
+                </div>
+                <div class="answer" >
+                    <div class="reponse ">
+                        En cas de problème, veuillez contacter immédiatement notre service client au 00228 92-67-75-75. Nous sommes là pour vous aider.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="card-header">
+                    <a class="question " >
+                        Comment puis-je contacter le service client de eGoTransfer en cas de problème ?
+                    </a>
+                </div>
+                <div class="answer" >
+                    <div class="reponse ">
+                        Pour toute question ou problème, n'hésitez pas à nous contacter au 00228 92-67-75-75. Notre équipe d'assistance est prête à vous aider.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="card-header">
+                    <a class="question " >
+                        eGoTransfer propose-t-il des services pour les entreprises ?
+                    </a>
+                </div>
+                <div class="answer" >
+                    <div class="reponse ">
+                        Oui, eGoTransfer propose des services adaptés aux entreprises. Pour plus d'informations, veuillez contacter notre service client.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="card-header">
+                    <a class="question " >
+                        Comment puis-je vérifier l'état d'une transaction en cours sur eGoTransfer ?
+                    </a>
+                </div>
+                <div class="answer" >
+                    <div class="reponse ">
+                        Vous pouvez consulter l'état de vos transactions sur la page d'accueil de votre application eGoTransfer.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="card-header">
+                    <a class="question " >
+                        Quelle est la limite de transaction sur eGoTransfer ?
+                    </a>
+                </div>
+                <div class="answer" >
+                    <div class="reponse ">
+                        Il n'y a pas de limite fixe pour les transactions sur eGoTransfer. Cependant, le montant que vous pouvez envoyer ou recevoir dépend des limites de vos comptes Tmoney et Flooz.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact du service -->
+    <div class="contact-section" id="contact">
+        <h2>Contactez-nous</h2>
+        <div class="info-item">
+            <p ><a href="mailto:infos@egofintech.com" ><i class="fas fa-envelope" ></i>  Email : infos@egofintech.com</a></p>
+        </div>
+        <div class="info-item">
+            <p  ><a href="tel:+22892677575" ><i class="fas fa-phone" ></i>  Téléphone : +228 92 67 75 75</a></p>
+        </div>
+        <div class="info-item">
+        <p >
+            <a href="https://goo.gl/maps/3jSspztZ2ZkB6dBv6" target="_blank">
+            <i class="fas fa-map-marker-alt"></i> Adresse : KODJOVIAKOPE, Immeuble Togo Invest en face de GOZEM</a>
+        </p>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
